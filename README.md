@@ -1,17 +1,26 @@
-real-person
+# real-person
 
-日本語の文章からAIっぽい表現を取り除き、意味を変えずに人が書いたような自然な文章に直すためのClaudeのスキルです。
+## このスキルについて
 
-スキルの中身は real-person/SKILL.md にあります。
+Claudeにおいて、AIっぽい日本語を減らすためのスキルです。
 
-claude.aiで使う
+スキルの中身は [real-person/SKILL.md](real-person/SKILL.md) にあります。
 
-real-person/SKILL.md をダウンロードし、claude.aiの「カスタマイズ」→「Skills」→「追加」→「Skillsをアップロード」から追加します。
+## 何が嬉しいか
 
-Claude Codeで使う
+このスキルは敢えて完全に人間が書いています。そのため、このスキル自体にAIっぽい表現が入ってしまうリスクが低いです。
 
-real-person フォルダを ~/.claude/skills/ に置きます。
+シンプルに作っているためトークンの追加消費が少ないです。
 
+## claude.aiで使う
+
+[real-person/SKILL.md](real-person/SKILL.md) をダウンロードし、claude.aiの「カスタマイズ」→「Skills」→「追加」→「Skillsをアップロード」から追加します。
+
+## Claude Codeで使う
+
+real-person フォルダを `~/.claude/skills/` に置きます。
+
+```bash
 git clone https://github.com/yuki-keio/real-person.git
-
 cp -r real-person/real-person ~/.claude/skills/
+```
