@@ -1,7 +1,7 @@
 {
   "name": "real-person",
   "displayName": "Real Person",
-  "description": "日本語の文章からAIっぽい表現を取り除き、なるべく意味を変えずに自然な文章に直すスキル",
+  "description": "日本語の文章からAIっぽい表現を取り除き、意味を変えずに自然な文章に直すスキル",
   "author": {
     "name": "Yuki Lab",
     "url": "https://yuki-lab.com/"
