@@ -20,11 +20,6 @@ Claudeにおいて、AIっぽい日本語を減らすためのスキルです。
 
 `skills/real-person` フォルダを `~/.claude/skills/` に置きます。
 
-```bash
-git clone https://github.com/yuki-keio/real-person.git
-cp -r real-person/skills/real-person ~/.claude/skills/
-```
-
 ## データの扱い
 
 このスキルの中身は文章の書き方の指示だけです。プログラムの実行や外部へのデータ送信はありません。
