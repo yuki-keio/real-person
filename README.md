@@ -12,6 +12,12 @@ Claudeにおいて、AIっぽい日本語を減らすためのスキルです。
 
 ・シンプルに作っているためトークンの追加消費が少ないです。
 
+## 設計思想
+
+AIは自分自身の癖を自覚しづらいという前提で作っています。
+
+一般的に、文章の内容を決めたりタスクの実行をしたりすること自体においては、AIの出力を制約しないことが推奨される場合もあります。しかし文章の「AIっぽさ」を減らすという観点からは、むしろAIが文章のスタイルを決める余地を減らすことで大幅に出力が改善すると感じたので、このスキルでは文章の内容は制約しない一方で、スタイルについてはNG例を具体的に指定することで、AIっぽさが入り込む余地を意図的に減らしています。
+
 ## claude.aiで使う
 
 [skills/real-person/SKILL.md](skills/real-person/SKILL.md) をダウンロードし、claude.aiの「カスタマイズ」→「Skills」→「追加」→「Skillsをアップロード」から追加します。
@@ -22,10 +28,12 @@ Claudeにおいて、AIっぽい日本語を減らすためのスキルです。
 
 ## データの扱い
 
-このスキルの中身は文章の書き方の指示だけです。プログラムの実行や外部へのデータ送信はありません。
+このスキルの中身は文章の書き方の指示のみです。プログラムの実行や外部へのデータ送信は実施しません。
 
 ## English
 
 real-person is a skill that helps Claude write natural Japanese. It lists patterns that make Japanese text read as AI-written, such as too many commas, unnatural metaphors, overused hiragana, unusual word choices, and references the reader cannot follow. Claude uses it when you ask it to make Japanese text sound natural, and when it writes or edits Japanese documents, emails, articles, or reports for people to read. When it edits existing text, it keeps the original meaning and does not add guesses or filler.
+
+The skill is designed on the assumption that AI has trouble noticing its own habits. For deciding what to write or carrying out a task, it is sometimes recommended not to constrain AI output. For reducing the AI-like feel of writing, though, I found that output improves a lot when the AI has less room to decide the style. So this skill leaves the content of the text unconstrained, but gives concrete examples of styles to avoid, to deliberately leave less room for AI-like habits.
 
 This skill only contains writing instructions. It does not run programs or send data anywhere.
