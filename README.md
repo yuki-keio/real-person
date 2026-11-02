@@ -26,7 +26,11 @@ AIは自分自身の癖を自覚しづらいという前提で作っています
 
 ## Claude Codeで使用
 
-`skills/real-person` フォルダを `~/.claude/skills/` に置きます。
+```bash
+npx skills add yuki-keio/real-person -g -a claude-code -y
+```
+
+Node.js を使わない場合は、`skills/real-person` フォルダを `~/.claude/skills/` に置きます。
 
 ## スキルの活用例
 
