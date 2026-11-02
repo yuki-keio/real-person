@@ -32,7 +32,7 @@ npx skills add yuki-keio/real-person -g -a claude-code -y
 ```
 
 <方法2>  
-`skills/real-person` フォルダの内容を`~/.claude/skills/` にコピペ
+`skills/real-person` フォルダを`~/.claude/skills/` にコピペ
 
 ## claude.aiで使用
 
