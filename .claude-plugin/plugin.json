@@ -1,5 +1,6 @@
 {
   "name": "real-person",
+  "version": "1.0.0",
   "displayName": "Real Person",
   "description": "日本語の文章からAI特有の表現の癖を取り除き、自然で読みやすい文章に直すスキル",
   "author": {
