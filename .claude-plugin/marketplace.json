@@ -1,0 +1,12 @@
+{
+  "name": "real-person",
+  "owner": {
+    "name": "Yuki Lab"
+  },
+  "plugins": [
+    {
+      "name": "real-person",
+      "source": "./"
+    }
+  ]
+}
